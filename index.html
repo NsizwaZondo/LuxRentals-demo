@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lux Rentals</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="side-menu">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#fleet">Fleet</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar">
+    <h1>Lux Rentals</h1>
+    <nav class="nav-links" id="nav-links">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content-wrapper">
+      <div class="hero-content animate-float delay-1">
+        <h1>Drive in Style</h1>
+        <p>Luxury car rentals for those who demand performance, elegance, and prestige.</p>
+        <a href="#fleet" class="btn">View Our Fleet</a>
+      </div>
+
+      <div class="hero-image-grid animate-float delay-1">
+        <img src="pexels-julian-largo-622163228-17377918.jpg" alt="Luxury car 1">
+        <img src="pexels-mikebirdy-2365572.jpg" alt="Luxury car 2">
+        <img src="pexels-m-c-256419727-14834539.jpg" alt="Luxury car 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="fleet" id="fleet">
+    <div class="container">
+      <h2>Our Fleet</h2>
+      <p>Explore our exclusive collection of luxury vehicles.</p><br>
+      <div class="car-grid">
+        <div class="car-item">
+          <img src="pexels-nikola-kolev-2438142-18370955.jpg" alt="Car 1">
+          <h3>Luxury Sedan</h3>
+          <p>Experience the ultimate in comfort and style.</p>
+          <button class="explore-btn" onclick="location.href='#collection'">Explore</button>
+        </div>
+        <div class="car-item">
+          <img src="pexels-alexander-pollinger-137430820-10566898.jpg" alt="Car 2">
+          <h3>Sport Coupe</h3>
+          <p>Unleash your inner speed demon</p><br>
+           <button class="explore-btn" onclick="location.href='#collection'">Explore</button>
+        </div>
+        <div class="car-item">
+          <img src="pexels-gmb-visuals-564876670-18238512.jpg" alt="Car 3">
+          <h3>Luxury SUV</h3>
+          <p>Perfect for family trips or off-road adventures.</p>
+           <button class="explore-btn" onclick="location.href='#collection'">Explore</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-wrapper">
+      <div class="about-img">
+        <img src="pexels-introspectivedsgn-18038881.jpg" alt="About Us">
+      </div>
+
+      <div class="about-content">
+        <h2>Who We Are</h2></br>
+        <p>At Lux Rentals, we are dedicated to providing the highest quality luxury car rentals. Our fleet is meticulously maintained and our customer service is unmatched.</p>
+        <p>Whether you're looking for a sleek sedan or a powerful SUV, we have the perfect vehicle for you.</p>
+        <p>Our team is passionate about cars and committed to ensuring you have the best experience possible.</p>
+        <p>Explore our collection and find the car of your dreams.</p>
+        <p>We look forward to serving you!</p><br>
+         <button class="explore-btn" onclick="location.href='#collection'">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-info" id="more-info">
+    <div class="more-info-container">
+      <h2>Why Choose Us</h2></div>
+      <div class="qualities-container">
+        <div class="qualities">
+        <i class="fa-solid fa-ranking-star"></i>
+        <p>Quality high end cars</p>
+        </div>
+    
+        <div class="qualities">
+          <i class="fa-solid fa-headset"></i>
+          <p>24/7 customer support</p>
+        </div>    
+      
+        <div class="qualities">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Wide range of luxury vehicles</p>
+        </div>  
+    
+        <div class="qualities">
+          <i class="fa-solid fa-shield"></i>
+          <p>Insurance and roadside assistance included</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-content">
+        <h2>Ready to ride in style?</h2>
+        <p>Call us today to get your ride and own the streets</p><br>
+        <a href="tel:+27630688284" class="cta-btn">Call Us</a>
+      </div>
+
+      <div class="contact-img">
+        <img src="pexels-bradikan-31043181.jpg" alt="contact img">
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+      <h2>A word from previous customers</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Lux Rentals made my anniversary trip unforgettable. The car was spotless and stunning!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>- Sarah M., Cape Town</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Excellent customer service and the Range Rover handled beautifully during our weekend getaway."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <h4>- Tebogo L., Johannesburg</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"I rented a convertible for a photo shoot—absolutely worth it. Professional and easy process."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h4>- Aisha K., Durban</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Lux Rentals</h2>
+      <p>Drive in Style. Live in Luxury.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone-alt"></i> +27 63 068 8284</p>
+      <p><i class="fas fa-envelope"></i> info@luxrentals.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/27630688284" target="_blank" title="Chat on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Lux Rentals. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
