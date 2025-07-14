@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lux Rentals</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <h1>Lux Rentals</h1>
+    <nav class="nav-links" id="nav-links">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html #about">About</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="collection">
+    <h2>Explore Our Collection</h2>
+    <p>Discover the luxury and performance of our exclusive car rentals.</p>
+
+     <div class="category-filter">
+      <nav class="category-nav">
+        <ul>
+          <li><a href="luxsedan.html">Luxury Sedan</a></li>
+          <li><a href="suv.html">Luxury SUV</a></li>
+          <li><a href="sport.html" class="active">Sport Coupe</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="collection-container">
+        <div class="left-side">
+            <div class="car-item">
+            <a href="#fleet">
+              <img src="pexels-lynxexotics-3802510.jpg" alt="lambo">
+              <div class="car-details">
+                <h3>Lamborghini Gallardo Widebody</h3>
+                <span class="car-category">Sport Coupe</span>
+                
+                <div class="car-specs">
+                  <span><i class="fas fa-cogs"></i> 7 Speed Auto</span>
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-user-friends"></i> 2 Seats</span>
+                </div>
+                <div class="car-price">
+                  <strong>R7000</strong> / day
+                </div>
+                <button class="select-car-btn" data-car="lambo">Select</button>
+              </div>
+            </a>
+          </div>
+
+          <div class="car-item">
+            <a href="#fleet">
+                <img src="pexels-alexander-pollinger-137430820-10566898.jpg" alt="v10">
+                <div class="car-details">
+                  <h3>Audi R8 V10</h3>
+                  <span class="car-category">Sport Coupe</span>
+              
+                  <div class="car-specs">
+                    <span><i class="fas fa-cogs"></i> 7 Speed Auto</span>
+                    <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fas fa-user-friends"></i> 2 Seats</span>
+                  </div>
+                  <div class="car-price">
+                    <strong>R4500</strong> / day
+                  </div>
+                  <button class="select-car-btn" data-car="v10">Select</button>
+                </div>
+              </a>
+          </div>
+
+          <div class="car-item">
+            <a href="#fleet">
+            <img src="pexels-introspectivedsgn-18038881.jpg" alt="gt-500">
+              <div class="car-details">
+                <h3>Ford Mustang GT-500 SHELBY</h3>
+                <span class="car-category">Sport Coupe</span>
+                
+                <div class="car-specs">
+                  <span><i class="fas fa-cogs"></i> 6 Speed Manual</span>
+                  <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                  <span><i class="fas fa-user-friends"></i> 2 Seats</span>
+                </div>
+                <div class="car-price">
+                  <strong>R2500</strong> / day
+                </div>
+                  <button class="select-car-btn" data-car="gt-500">Select</button>
+                </div>
+              </a>
+            </div>
+
+            <div class="car-item">
+              <a href="#fleet">
+              <img src="pexels-saimon-8253060.jpg" alt="bmw-m4">
+                <div class="car-details">
+                  <h3>BMW M4 G82</h3>
+                  <span class="car-category">Sport Coupe</span>
+                  
+                  <div class="car-specs">
+                    <span><i class="fas fa-cogs"></i> 8 Speed Auto</span>
+                    <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                    <span><i class="fas fa-user-friends"></i> 4 Seats</span>
+                  </div>
+                  <div class="car-price">
+                    <strong>R2000</strong> / day
+                  </div>
+                    <button class="select-car-btn" data-car="bmw-m4">Select</button>
+                  </div>
+              </a>
+            </div>
+          </div>
+
+        <div class="right-side">
+            <div class="booking-form">
+              <h3>Rent a Car</h3>
+
+              <label for="pickup-location">Pickup Location</label>
+              <input type="text" id="pickup-location" name="pickup_location" required>
+
+              <label for="dropoff-location">Drop-off Location</label>
+              <input type="text" id="dropoff-location" name="dropoff_location" required>
+
+              <label for="pickup-datetime">Pickup Date & Time</label>
+              <input type="datetime-local" id="pickup-datetime" name="pickup_datetime" required>
+
+              <label for="return-datetime">Return Date & Time</label>
+              <input type="datetime-local" id="return-datetime" name="return_datetime" required>
+
+              <label for="car-type">Category</label>
+              <select id="car-type" name="car_type" required>
+                <option value="">Select a car</option>
+                <option value="economy">Luxury Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="luxury">Sports Coupe</option>
+              </select>
+
+              <label for="car-chosen">Car</label>
+              <select id="car-chosen" name="car_chosen" required>
+                <option value="">Select a car</option>
+                <option value="bmw-m5">BMW M5</option>
+                <option value="audi-s3">AUDI S3</option>
+                <option value="jaguar-xf">Jaguar XF</option>
+                <option value="mercedes-maybach">Mercedes Maybach</option>
+              </select>
+              
+              <label for="extras">Optional Extras</label>
+              <select id="extras" name="extras">
+                <option value="">None</option>
+                <option value="gps">GPS Navigation</option>
+                <option value="child-seat">Child Seat</option>
+                <option value="insurance">Full Insurance</option>
+              </select>
+
+              <label for="promo-code">Promo Code</label>
+              <input type="text" id="promo-code" name="promo_code">
+
+              <label for="total-cost">Total Estimated Cost ($)</label>
+              <input type="text" id="total-cost" name="total_cost" readonly value="">
+
+              <button class="btn" type="submit">Book Now</button>
+            </div>
+        </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Lux Rentals</h2>
+      <p>Drive in Style. Live in Luxury.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone-alt"></i> +27 63 068 8284</p>
+      <p><i class="fas fa-envelope"></i> info@luxrentals.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</p>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/27630688284" target="_blank" title="Chat on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Lux Rentals. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
